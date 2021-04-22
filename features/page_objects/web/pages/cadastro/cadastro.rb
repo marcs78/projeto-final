@@ -5,7 +5,7 @@ module Web
 
         def realizar_cadastro
           @user = Factory::Dynamic.user
-          input_cpf.gset @user[:cpf]
+          # input_cpf.gset @user[:cpf]
           @user
         end
       end
