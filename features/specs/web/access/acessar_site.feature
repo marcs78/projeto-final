@@ -1,7 +1,7 @@
 #language: pt
 
-@access
-Funcionalidade: Acesso
+@home
+Funcionalidade: Entrar na pagina inicial
 
   Cenário: Carregar página inicial
-    Dado que esteja na home
+    Dado que esteja na pagina inicial
