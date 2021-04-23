@@ -1,4 +1,4 @@
-require_relative 'simple_js_runnable.rb'
+require_relative "simple_js_runnable.rb"
 
 module PageHelper
   module KillModals
@@ -15,7 +15,7 @@ module PageHelper
 
   module KillPopUps
     def kill_popups
-      puts 'killing poop ups 💩'
+      puts "killing poop ups 💩"
       KillModals.kill_modals
     end
   end

@@ -1,4 +1,5 @@
 #language: pt
+#enconding: utf-8
 
 @home
 Funcionalidade: Entrar na pagina inicial
