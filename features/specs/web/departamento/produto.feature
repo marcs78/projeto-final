@@ -2,7 +2,7 @@
 #enconding: utf-8
 
 
-@produto
+@seleciona_produto
 Funcionalidade: Selecionar Produto
 
   Contexto: Carregar Feature

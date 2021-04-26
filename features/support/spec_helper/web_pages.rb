@@ -32,6 +32,10 @@ module Web
         def conta
           Web::Pages::Perfil::MinhaConta.new
         end
+
+        def produto
+          Web::Pages::Produtos::Produto.new
+        end
       end
     end
   end
