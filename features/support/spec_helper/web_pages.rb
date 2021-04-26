@@ -1,4 +1,4 @@
-Dir[File.join(File.dirname(__FILE__), 'page_objects/web/pages/*.rb')]
+Dir[File.join(File.dirname(__FILE__), "page_objects/web/pages/*.rb")]
   .sort.each { |file| require file }
 
 module Web
@@ -9,12 +9,16 @@ module Web
           Web::Pages::Home::Home.new
         end
 
-        def login
-          Web::Pages::Login::Login.new
+        def categoria
+          Web::Pages::Home::Categoria.new
         end
 
-        def cadastro
-          Web::Pages::Cadastro::Cadastro.new
+        def listagem
+          Web::Pages::Home::Listagem.new
+        end
+
+        def buscador
+          Web::Pages::Home::Buscador.new
         end
       end
     end

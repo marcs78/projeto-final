@@ -78,29 +78,29 @@ After do |scenario|
   end
 end
 
-# at_exit do
-#   # encoding: utf-8
-#   require "report_builder"
-#   time = Time.now.getutc
-#   time.localtime
-#   ReportBuilder.configure do |config|
-#     config.encoding = "utf-8"
-#     config.input_path = "reports/"
-#     config.report_path = "reports/cucumber_web_report"
-#     config.report_types = [:html]
-#     config.report_title = "compasso"
-#     config.color = "blue"
-#     config.additional_css = "css_report_builder.css"
-#     config.additional_info = {
-#       Browser: "Chrome",
-#       "Projeto" => "Compasso",
-#       "Versão" => "Mobile",
-#       "Ambiente" => "HML",
-#       "Data do Report" => "#{time.strftime("%d/%m/%Y")} - #{time.strftime("%k:%M")}",
-#     }
-#   end
-#   ReportBuilder.build_report
-# end
+at_exit do
+  # encoding: utf-8
+  require "report_builder"
+  time = Time.now.getutc
+  time.localtime
+  ReportBuilder.configure do |config|
+    config.encoding = "utf-8"
+    config.input_path = "reports/"
+    config.report_path = "reports/cucumber_web_report"
+    config.report_types = [:html]
+    config.report_title = "BringIT"
+    config.color = "blue"
+    config.additional_css = "css_report_builder.css"
+    config.additional_info = {
+      Browser: "Chrome",
+      "Projeto" => "Projeto da Trilha",
+      "Versão" => "Web",
+      "Ambiente" => "HML",
+      "Data do Report" => "#{time.strftime("%d/%m/%Y")} - #{time.strftime("%k:%M")}",
+    }
+  end
+  ReportBuilder.build_report
+end
 
 def clear_reports
   files = Dir.glob("reports/*")
