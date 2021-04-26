@@ -8,5 +8,5 @@ Funcionalidade: Acessar Categoria de Listagem
     Dado que esteja na home
 
   Esquema do Cenário: Carregar Listagem
-    Dado que selecione uma produto na listagem
+    E que selecione uma produto na listagem
     Então ao entar na pagina do produto verificar a SKU "TC329-MLP-12"

@@ -10,14 +10,15 @@ Funcionalidade: Cadastro
 
   @cad_pf
   Esquema do Cenário: Cadastrar Pessoa Fisica
-    Dado que acesse a pagina de cadastro
-    E selecione a opção "Pessoa Física"
-    Quando inserir os dados
+    E que acesse a pagina de cadastro
+    Quando selecionar a opção pessoa física
+    E inserir os dados
     Então o usuario estará cadastro
 
-  @cad_pj
-  Esquema do Cenário: Cadastrar Pessoa Juridica
-    Dado que acesse a pagina de cadastro
-    E selecione a opção "Pessoa Jurídica"
-    Quando inserir os dados
-    Então o usuario estará cadastro
+  # @cad_pj
+  # Esquema do Cenário: Cadastrar Pessoa Juridica
+  #   E que acesse a pagina de cadastro
+  #   Quando selecionar a opção "Pessoa Jurídica"
+  #   E informar o CNPJ
+  #   E inserir os dados
+  #   Então o usuario estará cadastro

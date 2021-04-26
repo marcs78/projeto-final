@@ -5,7 +5,7 @@ Dado("que insira uma informação {string}") do |info_produto|
   @buscador.inserir_info(info_produto)
 end
 
-Dado("selecionar o primeiro produto") do
+Quando("selecionar o primeiro produto") do
   @buscador = $web_pages.buscador
   @buscador.buscar
 end

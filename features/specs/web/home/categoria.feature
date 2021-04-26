@@ -8,5 +8,5 @@ Funcionalidade: Acessar Categoria do Header
     Dado que esteja na home
 
   Esquema do Cenário: Carregar Categoria
-    Dado que selecione uma categoria
+    E que selecione uma categoria
     Então deverá ser exibido o nome da categoria "Baterias"

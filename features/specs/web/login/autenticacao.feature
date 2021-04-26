@@ -8,13 +8,14 @@ Funcionalidade: Acesso por Login
     Dado que esteja na home
 
   Esquema do Cenário: Login
-    Dado que acesse a pagina de login
+    E que acesse a pagina de login
     Quando inserir o usuario "<usuario>" e senha "<senha>"
     E entrar no site
-    Então a mensagem Olá! "Olá!" será exibido no Header
+    # Então será exibido no header a mensagem "Olá!  Marcelo!"
+
       Exemplos:
-      | usuario                | senha       |
-      | mcordeiro23p@gmail.com | Projeto@123 |
-      | 09009609901            | Projeto@123 |
+        | usuario                | senha       |
+        | mcordeiro23p@gmail.com | Projeto@123 |
+        # | 09009609901            | Projeto@123 |
 
 

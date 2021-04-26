@@ -20,6 +20,18 @@ module Web
         def buscador
           Web::Pages::Home::Buscador.new
         end
+
+        def autenticacao
+          Web::Pages::Login::Autenticacao.new
+        end
+
+        def cadastro
+          Web::Pages::Login::Cadastro.new
+        end
+
+        def conta
+          Web::Pages::Perfil::MinhaConta.new
+        end
       end
     end
   end
