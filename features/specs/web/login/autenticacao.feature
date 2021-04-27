@@ -17,7 +17,7 @@ Funcionalidade: Acesso por Login
       Exemplos:
         | usuario                | senha       |
         | mcordeiro23p@gmail.com | Projeto@123 |
-        | 090.096.099-01         | Projeto@123 |
+        | 09009609901            | Projeto@123 |
 
 
   @auth_exception_user
@@ -39,7 +39,7 @@ Funcionalidade: Acesso por Login
     Exemplos:
         | usuario                | senha                        | alerta_pass                  |
         | mcordeiro23p@gmail.com |                              | Este é um campo obrigatório. |
-        | 090.096.099-01         |                              | Este é um campo obrigatório. |
+        | 09009609901            |                              | Este é um campo obrigatório. |
 
   @auth_exception_userpass
   Esquema do Cenário: Login sem sucesso
@@ -48,5 +48,5 @@ Funcionalidade: Acesso por Login
     Então deverá exibir o alerta para a falta de usuario "<alerta_user>" e senha "<alerta_pass>"
 
     Exemplos:
-        | usuario | senha       | alerta_user                  | alerta_senha                |
+        | usuario | senha       | alerta_user                  | alerta_pass                 |
         |         |             | Este é um campo obrigatório. | Este é um campo obrigatório.|

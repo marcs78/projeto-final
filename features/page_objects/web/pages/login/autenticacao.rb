@@ -40,7 +40,7 @@ module Web
           input_pass.gset pass
         end
 
-        def erro_auth(user, pass)
+        def error_auth(user, pass)
           input_user.gset user
           input_pass.gset pass
         end

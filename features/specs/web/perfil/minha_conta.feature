@@ -8,7 +8,7 @@ Funcionalidade: Minha Conta
     Dado que esteja na home
 
 
-  @auth @conta
+  @conta
   Esquema do Cenário: Acessar Minha Conta
     # E logado com usuario "<usuario>" e senha "<senha>"
     Quando acessar minha conta
