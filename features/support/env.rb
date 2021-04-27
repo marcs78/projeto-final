@@ -72,6 +72,28 @@ Capybara.register_driver :chrome do |app|
   Capybara::Selenium::Driver.new(app, browser: :chrome, options: options, http_client: client)
 end
 
+Capybara.register_driver :gecko do |app|
+  options = Selenium::WebDriver::Gecko::Options.new(
+    args: %w[
+      --ignore-ssl-errors
+      --ignore-certificate-errors
+      --disable-popup-blocking
+      --disable-gpu
+      --disable-translate
+      --start-maximized
+      --incognito
+      --no-sandbox
+      --acceptInsecureCerts=true
+      --disable-impl-side-painting
+      --debug_level=3
+      --headless
+    ],
+  )
+  client = Selenium::WebDriver::Remote::Http::Default.new
+  client.read_timeout = 90
+  Capybara::Selenium::Driver.new(app, browser: :firefox, options: options, http_client: client)
+end
+
 Capybara.configure do |config|
   config.default_driver = BROWSER
   config.app_host = URL
