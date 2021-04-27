@@ -9,6 +9,8 @@ module Web
         element :btn_login, "#send2"
         element :click_logo, "body > div.page-wrapper > header > div > div.logo-wrapper > a"
         element :msg_inicio, "#auth-icon > button > span"
+        element :user_alerta, "#email-error"
+        element :pass_alerta, "#pass-error"
 
         def entrar
           login_hover.hover
@@ -26,6 +28,21 @@ module Web
 
         def recon
           click_logo.gclick
+        end
+
+        def error_user(user, pass)
+          input_user.gset user
+          input_pass.gset pass
+        end
+
+        def error_pass(user, pass)
+          input_user.gset user
+          input_pass.gset pass
+        end
+
+        def erro_auth(user, pass)
+          input_user.gset user
+          input_pass.gset pass
         end
       end
     end
