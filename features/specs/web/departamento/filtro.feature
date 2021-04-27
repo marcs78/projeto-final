@@ -5,7 +5,7 @@
 @filtro
 Funcionalidade: Filtro
 
-  Contexto: Carregar página inicial
+  Contexto: Carregar Steps
     Dado que esteja na home
     E que selecione um departamento
 

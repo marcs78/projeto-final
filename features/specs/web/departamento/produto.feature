@@ -5,7 +5,7 @@
 @seleciona_produto
 Funcionalidade: Selecionar Produto
 
-  Contexto: Carregar Feature
+  Contexto: Carregar Steps
     Dado que esteja na home
     E que selecione um departamento
 
