@@ -36,6 +36,18 @@ module Web
         def produto
           Web::Pages::Produtos::Produto.new
         end
+
+        def carrinho
+          Web::Pages::Carrinho::Carrinho.new
+        end
+
+        def filtro
+          Web::Pages::Departamento::Filtro.new
+        end
+
+        def seleciona_produto
+          Web::Pages::Departamento::Produto.new
+        end
       end
     end
   end

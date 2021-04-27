@@ -20,7 +20,6 @@ module Factory
     def self.address
       {
         cep: Faker::Address.zip_code,
-        # cep: "99010051",
         logradouro: "Rua Coronel Chicuta",
         numero: "575",
         bairro: "Centro",

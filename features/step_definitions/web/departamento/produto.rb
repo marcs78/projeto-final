@@ -1,13 +1,14 @@
 # You can implement step definitions for undefined steps with these snippets:
 
-Dado("que acesse a pagina do departamento") do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
 Quando("selecionar o produto") do
-  pending # Write code here that turns the phrase above into concrete actions
+  @seleciona_produto = $web_pages.seleciona_produto
+  @seleciona_produto.produto
 end
 
 Quando("selecionar o produto pela opção compra") do
-  pending # Write code here that turns the phrase above into concrete actions
+  @seleciona_produto.opcao_compra
 end
+
+# Então("o produto será exibido com sua SKU {string}") do |sku|
+#   expect(@seleciona_produto.num_sku).to have_content sku
+# end

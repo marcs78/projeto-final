@@ -4,8 +4,8 @@ module Web
       class Home < SitePrism::Page
         set_url "/"
         element :dp_hover, "#department"
-        element :cat_dp, "#nav1 > li.category-menu.department > ul > li:nth-child(1) > p"
-        element :link_dp, 'a[href="https://www.bringit.com.br/acessorios.html"'
+        element :cat_dp, "#nav1 > li.category-menu.department > ul > li:nth-child(2) > p"
+        element :link_dp, "#nav1 > li.category-menu.department > ul > li:nth-child(2) > div > div.subcategory-wrapper > div.menu-all-link > a"
         element :txt_dp, "#maincontent > div.columns > div.column.main > div:nth-child(5) > div.category-title"
 
         def acessar_dp

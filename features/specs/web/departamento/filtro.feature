@@ -7,8 +7,8 @@ Funcionalidade: Filtro
 
   Contexto: Carregar página inicial
     Dado que esteja na home
+    E que selecione um departamento
 
   Esquema do Cenário: Utilizar Filtro de Busca
-    Dado que esteja na pagina do departamento
     Quando utilizar o filtro
-    Então a pagina do produto será exibida
+    Então o produto será exibido com sua SKU "SKU"

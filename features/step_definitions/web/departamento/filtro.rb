@@ -1,13 +1,13 @@
 # You can implement step definitions for undefined steps with these snippets:
 
-Dado("que esteja na pagina do departamento") do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
 Quando("utilizar o filtro") do
-  pending # Write code here that turns the phrase above into concrete actions
+  @filtro = $web_pages.filtro
+  @filtro.marca
+  @filtro.serie
+  @filtro.modelo
+  @filtro.pesquisar
 end
 
-Então("a pagina do produto será exibida") do
-  pending # Write code here that turns the phrase above into concrete actions
+Então("o produto será exibido com sua SKU {string}") do |sku|
+  expect(@filtro.txt_sku).to have_content sku
 end

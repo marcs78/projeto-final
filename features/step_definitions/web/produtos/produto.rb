@@ -7,13 +7,17 @@ Quando("inserir as informações de quantidade {string}") do |qtd|
   @produto.quantidade(qtd)
 end
 
-Quando("inserir o frete e calcular deverá mostrar os métodos de envio {string}") do |envio|
+Quando("inserir o frete") do
   @produto.frete
 end
 
-Quando("visualizar o produto") do
-  @produto.view
+Quando("calcular deverá mostrar os métodos de envio {string}") do |envio|
+  expect(@produto.env_frete).to have_content envio
 end
+
+# Então("visualizar o produto") do
+#   @produto.view
+# end
 
 Então("deverá comprar o produto") do
   @produto.comprar
